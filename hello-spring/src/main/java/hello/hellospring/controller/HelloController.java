@@ -23,7 +23,7 @@ public class HelloController {
     @GetMapping("hello-rest")
     @ResponseBody
     public String helloRest(){
-        return "API";
+        return "API.";
     }
 
 }

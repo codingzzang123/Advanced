@@ -34,8 +34,11 @@ class DatabaseExampleApplicationTests {
     }
 
     @Test
-    @DisplayName("DB 연결 테스트")
-    public void findAll(){
-        log.warn(repo.findAll().toString());
+    public void test(){
+        String []lunch = new String[2];
+        lunch[0] = "수누리";
+        lunch[1] = "양꼬치";
+
+        log.info(String.valueOf("랜덤 점심메뉴 : "+lunch[(int) (Math.random()%2)]));
     }
 }
